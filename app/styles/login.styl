@@ -1,0 +1,111 @@
+.u-login
+  width: 310px
+  margin: 300px auto 0
+  padding: 10px 44px 28px
+  background-color: color_white
+  border-top: 3px solid color_red
+  border-bottom: 3px solid color_red
+  box-shadow 0 0 7px color_shadow
+  box-sizing: border-box
+  &_decoration
+    &--circle
+      background-color: color_light-bg
+      width: 24px;
+      height: 24px;
+      display: inline-block;
+      border-radius: 50%;
+      box-shadow: inset 0 0 10px color_shadow
+    &--rope
+      position: absolute
+      top: -100px
+      left: calc(50% - 43px)
+  &_title
+    display: block
+    text-align: center
+    &--big
+      @extend .u-login_title
+      color: color_red
+      font-size: 40px
+      font-family: 'GothamProBold'
+    &--small
+      @extend .u-login_title
+      color color_dark-gray-text
+      font-size: 16px
+      font-family: 'GothamProReg'
+      opacity: .57
+      text-transform: uppercase
+      margin-top: 3px
+  &_input
+    font-family: 'GothamProReg'
+    &-label
+      display: block
+      color: color_gray-text
+      font-size: 10px
+      text-transform: uppercase
+      font-family: GothamProMed
+      margin-bottom: 5px
+    &-text
+      display: block
+      border: 1px solid color_light-gray-borders
+      border-radius: 3px
+      width: 100%
+      height: 37px
+      box-sizing: border-box
+      padding: 0 5px
+    &-wrap
+      margin-bottom: 15px
+  &_link
+    display: block
+    &--big
+      @extend .u-login_link
+      text-align: center;
+      margin-top: 16px;
+      display: inline-block;
+      text-decoration: none;
+      border-bottom: 1px dotted;
+      text-transform: uppercase;
+      font-size: 9px;
+      font-weight: 700;
+      color: #7d7d7d;
+      letter-spacing: 0.6px;
+      font-family: 'GothamProMed';
+      &:hover
+        opacity: .9
+    &--small
+      @extend .u-login_link
+      font-size: 10px
+      line-height: 2
+      color color_gray-text
+      font-family: 'GothamProMed'
+      text-align: right
+      text-decoration: none
+      opacity: .7
+      &:hover
+        opacity: .5
+  &_btn
+    width: 100%
+    background-color: color_red
+    display: block
+    height: 40px
+    line-height: 40px
+    color: white
+    font-weight: bold
+    text-align: center
+    text-transform: uppercase
+    font-size: 11px
+    letter-spacing: 1px
+    border-radius 3px
+    cursor: pointer
+    font-family: 'GothamProMed'
+    &:hover
+      opacity: .9
+    &:active
+      opacity: 1
+  &_icon
+    width 130px
+    text-align center
+    position absolute
+    top 73px
+    left calc(50% - 65px)
+    &__image
+      width: 100%

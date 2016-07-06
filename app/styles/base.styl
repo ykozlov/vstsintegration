@@ -1,0 +1,73 @@
+.clearfix:before,
+.clearfix:after
+  content ' '
+  display table
+
+
+.clearfix:after
+  clear both
+
+@font-face
+  font-family 'GothamProLight'
+  font-style normal
+  font-weight 100
+  src local('GothamProLight'), url('fonts/GothaProLig.woff') format('woff')
+
+@font-face
+  font-family 'GothamProReg'
+  font-style normal
+  font-weight 100
+  src local('GothamProReg'), url('fonts/GothaProReg.woff') format('woff')
+
+@font-face
+  font-family 'GothamProMed'
+  font-style normal
+  font-weight 100
+  src local('GothamProMed'), url('fonts/GothaProMed.woff') format('woff')
+
+@font-face
+  font-family 'GothamProBold'
+  font-style normal
+  font-weight 100
+  src local('GothamProBold'), url('fonts/GothaProBol.woff') format('woff')
+
+html
+  height: 100%
+
+body
+  min-height: 100%
+  display: flex
+  flex-direction: column
+
+html, body
+  font-family "GothamProReg"
+  font-size 15px
+  scroll-behavior smooth
+  min-width 320px
+  background-color color_light-bg
+
+content
+  flex 1 0 auto
+
+h4
+  opacity .3
+  font-size 16px
+  font-weight bold
+  letter-spacing 6px
+  margin 20px 0
+
+h5
+  opacity .4
+  font-size 17px
+  letter-spacing 3px
+  text-align center
+  font-weight bold
+
+button, a, input, textarea, select
+  font-family "GothamProReg"
+  &:focus
+    outline: none
+
+button, a
+  transition .3s
+

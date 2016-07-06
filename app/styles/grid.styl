@@ -1,0 +1,41 @@
+.u-block
+  margin-top: 40px
+  margin-bottom: 40px
+
+.u-container
+  width 100%
+  margin-left auto
+  margin-right auto
+  max-width width-content_lg
+  &--flex-row-around
+    display flex
+    flex-flow row nowrap
+    justify-content: space-around
+
+w-container = 10, 20, 30, 40, 50, 60, 70, 80, 90, 100
+for w in w-container
+  .u-container--{w}
+    @extend .u-container
+    width: (w * 1%)
+
+sizes = 'lg', 'md', 'sm'
+for size in sizes
+  @media all and (max-width: width_ + size)
+    .u-container
+      max-width: width-content_ + size
+
+for m-size in (1..50)
+  .ml{m-size}
+    margin-left: m-size * 1px
+  .mr{m-size}
+    margin-right: m-size * 1px
+  .mt{m-size}
+    margin-top: m-size * 1px
+  .mb{m-size}
+    margin-bottom: m-size * 1px
+
+.tac
+  text-align: center
+
+.rel
+  position: relative

@@ -1,0 +1,19 @@
+.u-login
+  .tac
+    img(src='images/rope.png').u-login_decoration--rope
+    .u-login_decoration--circle
+  .u-login_title.mb31.mt20
+    span.u-login_title--big U&#8226;L&#8226;T&#8226;R&#8226;A
+    span.u-login_title--small venado technologies
+  .mb13
+    label.u-login_input-label(for='u-login') login
+    input(ng-model='user.login').u-login_input-text#u-login
+  .mb7
+    label.u-login_input-label(for='u-pass') password
+    input(ng-model='user.password').u-login_input-text#u-pass
+    a.u-login_link--small(href='/') Forgot Password?
+  a(ng-click="login()").u-login_btn log in
+  .tac.rel
+    a.u-login_link--big(href='/') get support
+    .u-login_icon
+      img(src='images/logo.png').u-login_icon__image
